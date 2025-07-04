@@ -67,6 +67,8 @@ def setup_environment():
     
     print("🎉 Environment setup completed successfully!")
 
+    return True
+
 if __name__ == "__main__":
     success = setup_environment()
     if not success:
