@@ -2,7 +2,7 @@
 
 A machine learning project for recognizing fish species from images.
 
-## Getting Started
+## Web Application (Getting Started)
 
 1. **Clone the repository:**
 
@@ -11,11 +11,11 @@ A machine learning project for recognizing fish species from images.
    cd FishRNetv1
    ```
 
-2. **Run the installer**
+2. **Run the installer** (WINDOWS ONLY)
    Navigate to **/Source Code** folder and double click on **start.bat** to start the web application. This will automatically download necessary and do all the necessary steps.
 
 
-# If the installer fails, you can do the following steps:
+# If the installer fails, you can do the following steps (WINDOWS ONLY):
 
 2. **Create & Activate Virtual Environment**
 
@@ -42,8 +42,9 @@ A machine learning project for recognizing fish species from images.
    python app.py
    ```
 
-5. **View training & experiments:**
-   - Training notebooks can be found in `github.com/kruizo/model-training`.
+## Training (Getting Started)
+
+Navigate to **/training** folder and double click on **start.bat** to download the necessary requirements including the dataset. This will automatically download necessary and do all the necessary steps.
 
 ## Screenshots
 
