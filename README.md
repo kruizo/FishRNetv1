@@ -15,7 +15,7 @@ A machine learning project for recognizing fish species from images.
    Navigate to **/Source Code** folder and double click on **start.bat** to start the web application. This will automatically download necessary and do all the necessary steps.
 
 
-# If the installer fails, you can do the following steps (WINDOWS ONLY):
+## If the installer fails, you can do the following steps (WINDOWS ONLY):
 
 2. **Create & Activate Virtual Environment**
 
