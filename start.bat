@@ -50,12 +50,6 @@ IF EXIST "venv" (
         pause
         exit /b 1
     )
-
-    IF !ERRORLEVEL! NEQ 0 (
-        echo [ERROR] Failed to create virtual environment.
-        pause 
-        exit /b 1
-    )
     
     echo [INFO] Activating new virtual environment...
     call .\venv\Scripts\activate.bat
