@@ -17,7 +17,7 @@ def setup_environment():
     
     if os.environ.get("VIRTUAL_ENV") is None:
         print("❌ Error: You must run this script from within a virtual environment or run serve.bat")
-        sys.exit(1)
+        return False
     
     print("✅ Running in virtual environment.")
 
@@ -31,7 +31,7 @@ def setup_environment():
         print("✅ Requirements installed successfully.")
     except subprocess.CalledProcessError as e:
         print(f"❌ Failed to install requirements: {e}")
-        sys.exit(1)
+        return False
 
     if not package_installed("torch"):
         print("🔥 Installing PyTorch + CUDA dependencies...")
@@ -44,7 +44,7 @@ def setup_environment():
             print("✅ PyTorch with CUDA installed successfully.")
         except subprocess.CalledProcessError as e:
             print(f"❌ Failed to install PyTorch: {e}")
-            sys.exit(1)
+            return False
     else:
         print("✅ PyTorch already installed.")
 
@@ -58,12 +58,13 @@ def setup_environment():
             print("⚠️  CUDA is not available. Training will use CPU.")
     except ImportError:
         print("⚠️  Could not import torch to check CUDA availability.")
-
+        
     print("📦 Listing installed packages:")
     try:
         subprocess.run([sys.executable, "-m", "pip", "list"], shell=True, check=True)
     except subprocess.CalledProcessError:
         print("❌ Failed to list packages.")
+        return False
     
     print("🎉 Environment setup completed successfully!")
 
