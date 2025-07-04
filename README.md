@@ -2,43 +2,26 @@
 
 A machine learning project for recognizing fish species from images.
 
-## Project Structure
-
-```
-fish-specie-recognition/
-├── data/                # Datasets and images
-├── models/              # Saved and trained models
-├── notebooks/           # Jupyter notebooks for experiments
-├── src/                 # Source code for training and inference
-│   ├── data/            # Data loading and preprocessing scripts
-│   ├── models/          # Model architectures and utilities
-│   └── utils/           # Helper functions
-├── requirements.txt     # Python dependencies
-├── README.md            # Project documentation
-```
-
 ## Getting Started
 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/kruizo/fish-specie-recognition.git
-   cd fish-specie-recognition
+   git clone https://github.com/kruizo/FishRNetv1.git
+   cd FishRNetv1
    ```
+
+2. **Run the installer**
+   Navigate to **/Source Code** folder and double click on **start.bat** to start the web application. This will automatically download necessary and do all the necessary steps.
+
+
+# If the installer fails, you can do the following steps:
 
 2. **Create & Activate Virtual Environment**
 
-   For WIndows (Permission may be required to run scripts):
-
-   ```bash
-   ./activate.bat
-   ```
-
-   Alternatively,
-
    ```bash
    python3 -m venv venv
-   source venv/bin/activate
+   env/bin/activate
    ```
 
 3. **Install dependencies:**
@@ -54,14 +37,6 @@ fish-specie-recognition/
    ```
 
 4. **Run the application**
-
-   For Windows:
-
-   ```bash
-   ./serve.bat
-   ```
-
-   Alternatively,
 
    ```bash
    python app.py
